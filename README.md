@@ -1,3 +1,7 @@
+## Course for this Website
+
+https://www.youtube.com/watch?v=Yw7yWHigGKI
+
 ## External Libraries
 
 Framer-motion: https://www.framer.com/motion/
@@ -6,6 +10,37 @@ Tailwind: https://tailwindcss.com/
 
 iconFy: https://docs.iconify.design/
 
+## Logic of the project
+
+Add fonts to the project
+
+Navbar component
+
+Logo component
+
+Create Home page
+
+Create Animated text component
+
+Footer component
+
+Create About page
+
+Create Skills component
+
+Create experience/education component
+
+Project Page
+
+Article Page
+
+Adding drak mode
+
+Optimaze Image component
+
+Make it responsive
+
+Transitions
 
 
 ## Getting Started
