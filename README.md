@@ -1,8 +1,10 @@
-## Externanl Libraries
+## External Libraries
 
 Framer-motion: https://www.framer.com/motion/
 
 Tailwind: https://tailwindcss.com/
+
+iconFy: https://docs.iconify.design/
 
 
 
