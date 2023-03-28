@@ -10,6 +10,8 @@ Tailwind: https://tailwindcss.com/
 
 iconFy: https://docs.iconify.design/
 
+SVGR TO ADD ICONS https://react-svgr.com/playground/
+
 ## Logic of the project
 
 Add fonts to the project
@@ -41,7 +43,6 @@ Optimaze Image component
 Make it responsive
 
 Transitions
-
 
 ## Getting Started
 
