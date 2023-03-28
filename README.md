@@ -2,7 +2,7 @@
 
 https://www.youtube.com/watch?v=Yw7yWHigGKI
 
-## External Libraries
+## External Libraries and links
 
 Framer-motion: https://www.framer.com/motion/
 
@@ -11,6 +11,8 @@ Tailwind: https://tailwindcss.com/
 iconFy: https://docs.iconify.design/
 
 SVGR TO ADD ICONS https://react-svgr.com/playground/
+
+https://www.midjourney.com/home/
 
 ## Logic of the project
 
