@@ -48,7 +48,8 @@ export default function Home() {
                 <Link
                   href={'mailto: simonetvia@outlook.com'}
                   target={'_blank'}
-                  className="ml-4 text-lg text-dark underline capitalize font-medium"
+                  className="ml-4 text-lg text-dark underline capitalize font-medium
+                  hover:text-slate-500 transition duration-300 ease-in-out"
                 >
                   Contact
                 </Link>
