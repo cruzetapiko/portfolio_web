@@ -1,0 +1,15 @@
+import Link from 'next/link';
+import React from 'react';
+import Layout from './Layout';
+
+export default function Footer() {
+  return (
+    <footer className="w-full border-t-2 border-solid border-dark font-medium text-lg ">
+      <Layout className="py-8 flex items-center justify-between">
+        <span>{new Date().getFullYear()} &copy; All Rights Reserved </span>
+        <Link href="/">Code With Cruzeta</Link>
+        <Link href="/">Say Hello</Link>
+      </Layout>
+    </footer>
+  );
+}
