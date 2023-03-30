@@ -5,6 +5,8 @@ import profilePicture from '@/public/images/profile/developer-pic-1.png';
 import AnimatedText from '@/components/AnimatedText';
 import Link from 'next/link';
 import { LinkArrow } from '@/components/Icons';
+import HireMe from '@/components/HireMe';
+import lightBulb from '@/public/images/svgs/miscellaneous_icons_1.svg';
 
 export default function Home() {
   return (
@@ -57,6 +59,14 @@ export default function Home() {
             </div>
           </div>
         </Layout>
+        <HireMe />
+        <div className="absolute right-8 bottom-8 w-24">
+          <Image
+            src={lightBulb}
+            alt="Picture of the author"
+            className="w-full h-auto"
+          />
+        </div>
       </main>
     </>
   );

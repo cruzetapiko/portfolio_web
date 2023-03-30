@@ -25,13 +25,13 @@ const CustomLink = ({ href, title, className = '' }) => {
 export default function NavBar() {
   return (
     <header className="w-full px-32 pt-4 font-medium flex items-center justify-between">
-      <Logo />
       <nav>
         <CustomLink href="/" title="Home" className="mx-3" />
         <CustomLink href="/about" title="About" className="mx-4" />
         <CustomLink href="/projects" title="Projects" className="mx-4" />
         <CustomLink href="/articles" title="Articles" className="ml-4" />
       </nav>
+      <Logo />
       <nav className="flex  items-center justify-center flex-wrap ">
         <motion.a
           href="/contact"
