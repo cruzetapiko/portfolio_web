@@ -20,7 +20,7 @@ const Skill = ({ name, x, y }) => {
 export default function Skills() {
   return (
     <>
-      <h2 className="font-bold text-8xl mt-64 text-center">Skills</h2>
+      <h2 className="font-bold text-8xl mt-40 mb-11  text-center">Skills</h2>
       <div className="flex items-center justify-center rounded-full w-full h-screen bg-circularLigth ">
         <motion.div
           className="flex place-items-center justify-center rounded-full font-semibold bg-dark text-light p-8 shadow-dark cursor-pointer"
