@@ -9,7 +9,9 @@ export default function Logo() {
     <div className="flex items-center justify-between mt-2 mr-28">
       <MotionLink
         href="/"
-        className="bg-dark w-20 h-20 text-light flex items-center justify-center rounded-full text-2xl font-bold "
+        className="bg-dark w-20 h-20 text-light flex items-center 
+        justify-center rounded-full text-2xl font-bold 
+        border border-solid border-transparent dark:border-light"
         whileHover={{
           backgroundColor: [
             '#121212',

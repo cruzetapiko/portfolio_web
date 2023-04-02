@@ -7,19 +7,19 @@ export default function LiIcon({ reference }) {
     offset: ['center end', 'center center'],
   });
   return (
-    <figure className="absolute left-0 stroke-dark ">
+    <figure className="absolute left-0 stroke-dark dark:stroke-light">
       <svg className="-rotate-90" width="75" height="75" viewBox="0 0 100 100">
         <circle
           cx="75"
           cy="50"
           r="20"
-          className="stroke-primary stroke-1 fill-none"
+          className="stroke-primary dark:stroke-primaryDark stroke-1 fill-none"
         />
         <motion.circle
           cx="75"
           cy="50"
           r="20"
-          className="stroke-[5px] fill-light"
+          className="stroke-[5px] fill-lightdark:fill-dark "
           style={{
             pathLength: scrollYProgress,
           }}
@@ -28,7 +28,7 @@ export default function LiIcon({ reference }) {
           cx="75"
           cy="50"
           r="10"
-          className="stroke-1 fill-primary animate-pulse "
+          className="stroke-1 fill-primary animate-pulse dark:fill-primaryDark"
         />
       </svg>
     </figure>

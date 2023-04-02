@@ -42,12 +42,12 @@ export default function about() {
         <title>Cruzetapiko | About</title>
         <meta name="description" content="About page content description" />
       </Head>
-      <main className="flex flex-col items-center justify-center ">
+      <main className="flex flex-col items-center justify-center dark:text-light">
         <Layout>
           <AnimatedText text={'Passion Fuels Purpose!'} className="mb-16" />
           <div className="grid  w-full grid-cols-8 gap-16 ">
             <div className="col-span-3 flex flex-col items-start justify-start ">
-              <h2 className="mb-4 text-lg font-bold uppercase text-dark/75  ">
+              <h2 className="mb-4 text-lg font-bold uppercase text-dark/75  dark:text-light/75">
                 Byography
               </h2>
               <p className="my-4 font-medium">
@@ -71,8 +71,8 @@ export default function about() {
                 your next project.
               </p>
             </div>
-            <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark p-2 bg-light">
-              <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark " />
+            <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark p-2 bg-light dark:bg-dark dark:border-light ">
+              <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light " />
               <Image
                 src={profilePicture}
                 alt="cruzetapiko"
@@ -84,7 +84,7 @@ export default function about() {
                 <span className="inline-block text-7xl font-bold">
                   <AnimatedNumber value={50} />+
                 </span>
-                <h2 className="text-xl text-dark/75 font-medium capitalize  ">
+                <h2 className="text-xl text-dark/75 font-medium capitalize dark:text-light/75  ">
                   Satiesfied clients
                 </h2>
               </div>
@@ -93,7 +93,7 @@ export default function about() {
                 <span className="inline-block text-7xl font-bold">
                   <AnimatedNumber value={39} />+
                 </span>
-                <h2 className="text-xl text-dark/75 font-medium capitalize ">
+                <h2 className="text-xl text-dark/75 font-medium capitalize dark:text-light/75">
                   Projects completed
                 </h2>
               </div>
@@ -102,7 +102,7 @@ export default function about() {
                 <span className="inline-block text-7xl font-bold">
                   <AnimatedNumber value={6} />+
                 </span>
-                <h2 className="text-xl text-dark/75 font-medium capitalize ">
+                <h2 className="text-xl text-dark/75 font-medium capitalize dark:text-light/75">
                   Years of experience
                 </h2>
               </div>
