@@ -19,7 +19,7 @@ export default function LiIcon({ reference }) {
           cx="75"
           cy="50"
           r="20"
-          className="stroke-[5px] fill-lightdark:fill-dark "
+          className="stroke-[5px] fill-light dark:fill-dark "
           style={{
             pathLength: scrollYProgress,
           }}

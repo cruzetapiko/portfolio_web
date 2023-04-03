@@ -51,7 +51,7 @@ const MovingImage = ({ title, img, link }) => {
 
 const FeaturedArticles = ({ img, title, time, summary, link }) => {
   return (
-    <li className="col-span-1 w-full p-4 bg-light border border-solid border-dark rounded-2xl border-r-4 border-b-4 ">
+    <li className="col-span-1 w-full p-4 bg-light dark:bg-dark border border-solid border-dark dark:border-light rounded-2xl border-r-4 border-b-4 ">
       <Link
         href={link}
         target="_blank"
@@ -66,12 +66,12 @@ const FeaturedArticles = ({ img, title, time, summary, link }) => {
         />
       </Link>
       <Link href={link} target="_blank">
-        <h2 className="my-2 mt-4 capitalize font-bold text-2xl hover:underline ">
+        <h2 className="my-2 mt-4 capitalize font-bold text-2xl hover:underline dark:text-light">
           {title}
         </h2>
       </Link>
-      <p className="text-sm mb-2">{summary}</p>
-      <span className="text-primary font-semibold">{time}</span>
+      <p className="text-sm mb-2 dark:text-light">{summary}</p>
+      <span className="text-primary dark:text-primaryDark font-semibold">{time}</span>
     </li>
   );
 };
@@ -80,14 +80,14 @@ const Article = ({ img, title, date, link }) => {
   return (
     <motion.li
       className="w-full flex items-center justify-between relative p-4 py-6 my-4 
-    rounded-xl bg-light text-dark first:mt-0 border border-solid border-dark
+    rounded-xl bg-light dark:bg-dark text-dark dark:text-light first:mt-0 border border-solid border-dark dark:border-light
     border-r-4 border-b-4"
       initial={{ y: 200 }}
       whileInView={{ y: 0, transition: { duration: 0.5, ease: 'easeInOut' } }}
       viewport={{ once: true }}
     >
-      <MovingImage title={title} img={img} link={link} />
-      <span className="text-primary font-semibold pl-4">{date}</span>
+      <MovingImage title={title} img={img} link={link} priority sizes="(max-width: 768px) 100vw,(max-width: 1200px) 50vw, 33vw" />
+      <span className="text-primary dark:text-primaryDark font-semibold pl-4">{date}</span>
     </motion.li>
   );
 };
@@ -99,7 +99,7 @@ export default function articles() {
         <title>Cruzetapiko | Articles</title>
         <meta name="description" content="About page content description" />
       </Head>
-      <main className=" w-full flex flex-col items-center justify-center overflow-hidden">
+      <main className=" w-full flex flex-col items-center justify-center overflow-hidden dark:text-light">
         <Layout className="pt-16">
           <AnimatedText
             text={'Words Can Change The World!'}

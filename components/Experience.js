@@ -47,6 +47,7 @@ export default function Experience() {
   const { scrollYProgress } = useScroll({
     target: ref,
     offset: ['start end', 'center start'],
+
   });
 
   return (
@@ -58,7 +59,7 @@ export default function Experience() {
         <div ref={ref} className="w-[75%] mx-auto relative ">
           <motion.div
             style={{ scaleY: scrollYProgress }}
-            className="absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-light "
+            className="absolute left-9 top-0 w-[4px] h-full bg-dark origin-top dark:bg-primaryDark "
           />
 
           <ul className="w-full flex flex-col items-start justify-between ml-4 ">
