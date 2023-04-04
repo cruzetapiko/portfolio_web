@@ -23,10 +23,14 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
           src={img}
           alt={title}
           className="w-full h-auto hover:scale-105 transition duration-300 ease-in-out"
+          priority
+          sizes="(max-width: 768px) 100vw,(max-width: 1200px) 50vw, 33vw"
         />
       </Link>
       <div className="w-1/2 flex flex-col items-start justify-center pl-6 dark:text-light ">
-        <span className="text-primary font-medium text-xl dark:text-primaryDark">{type}</span>
+        <span className="text-primary font-medium text-xl dark:text-primaryDark">
+          {type}
+        </span>
         <Link
           href={link}
           target="_blank"
@@ -74,7 +78,9 @@ const Project = ({ type, title, img, link, github }) => {
         />
       </Link>
       <div className="w-full flex flex-col items-start justify-center mt-4 dark:text-light">
-        <span className="text-primary dark:text-primaryDark font-medium text-xl">{type}</span>
+        <span className="text-primary dark:text-primaryDark font-medium text-xl">
+          {type}
+        </span>
         <Link
           href={link}
           target="_blank"

@@ -63,6 +63,8 @@ const FeaturedArticles = ({ img, title, time, summary, link }) => {
           className="w-full h-auto hover:scale-105 transition duration-300 ease-in-out"
           whileHover={{ scale: 1.05 }}
           transition={{ duration: 0.1 }}
+          priority
+          sizes="(max-width: 768px) 100vw,(max-width: 1200px) 50vw, 33vw"
         />
       </Link>
       <Link href={link} target="_blank">
@@ -71,7 +73,9 @@ const FeaturedArticles = ({ img, title, time, summary, link }) => {
         </h2>
       </Link>
       <p className="text-sm mb-2 dark:text-light">{summary}</p>
-      <span className="text-primary dark:text-primaryDark font-semibold">{time}</span>
+      <span className="text-primary dark:text-primaryDark font-semibold">
+        {time}
+      </span>
     </li>
   );
 };
@@ -86,8 +90,16 @@ const Article = ({ img, title, date, link }) => {
       whileInView={{ y: 0, transition: { duration: 0.5, ease: 'easeInOut' } }}
       viewport={{ once: true }}
     >
-      <MovingImage title={title} img={img} link={link} priority sizes="(max-width: 768px) 100vw,(max-width: 1200px) 50vw, 33vw" />
-      <span className="text-primary dark:text-primaryDark font-semibold pl-4">{date}</span>
+      <MovingImage
+        title={title}
+        img={img}
+        link={link}
+        priority
+        sizes="(max-width: 768px) 100vw,(max-width: 1200px) 50vw, 33vw"
+      />
+      <span className="text-primary dark:text-primaryDark font-semibold pl-4">
+        {date}
+      </span>
     </motion.li>
   );
 };
