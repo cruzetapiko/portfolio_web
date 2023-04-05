@@ -5,7 +5,8 @@ const Skill = ({ name, x, y }) => {
   return (
     <motion.div
       className="flex place-items-center justify-center rounded-full font-semibold bg-dark 
-      text-light py-3 px-6 shadow-dark cursor-pointer absolute dark:bg-light dark:text-dark"
+      text-light py-3 px-6 shadow-dark cursor-pointer absolute dark:bg-light dark:text-dark
+      lg:py-2 lg:px-4 md:text-sm md:py-1.5 md:px-3 xs:bg-transparent dark:xs:bg-transparent xs:text-dark dark:xs:text-light xs:font-bold"
       whileHover={{ scale: 1.1 }}
       initial={{ x: 0, y: 0 }}
       whileInView={{ x: x, y: y, transition: { duration: 1.5 } }}
@@ -19,11 +20,13 @@ const Skill = ({ name, x, y }) => {
 export default function Skills() {
   return (
     <>
-      <h2 className="font-bold text-8xl mt-40 mb-11  text-center">Skills</h2>
-      <div className="flex items-center justify-center rounded-full w-full h-screen bg-circularLigth dark:bg-circularDark">
+      <h2 className="font-bold text-8xl mt-40 mb-11  text-center md:text-6xl md:mt-20 ">
+        Skills
+      </h2>
+      <div className="flex items-center justify-center rounded-full w-full h-screen bg-circularLigth dark:bg-circularDark lg:h-[80vh]  sm:h-[60vh] xs:h-[40vh]">
         <motion.div
           className="flex place-items-center justify-center rounded-full font-semibold 
-          bg-dark text-light p-8 shadow-dark cursor-pointer dark:bg-light dark:text-dark"
+          bg-dark text-light p-8 shadow-dark cursor-pointer dark:bg-light dark:text-dark lg:p-6 md:p-4 xs:p-2 xs:text-sm"
           whileHover={{ scale: 1.1 }}
         >
           <h2>Web</h2>

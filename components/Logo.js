@@ -6,7 +6,7 @@ const MotionLink = motion(Link);
 
 export default function Logo() {
   return (
-    <div className="flex items-center justify-between mt-2 mr-28">
+    <div className="flex items-center justify-between mt-2 md:mr-16">
       <MotionLink
         href="/"
         className="bg-dark w-20 h-20 text-light flex items-center 
