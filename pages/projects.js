@@ -11,13 +11,19 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   return (
     <article
       className="w-full flex items-center justify-between
-    rounded-3xl border border-solid  border-dark dark:border-light bg-light shadow-2xl p-8 relative dark:bg-dark"
+    rounded-3xl border border-solid  border-dark dark:border-light 
+    bg-light shadow-2xl p-8 relative dark:bg-dark
+    lg:flex-col lg:p-8 xs:radius-xl xs:rounded-3xl xs:p-4"
     >
-      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark dark:bg-light " />
+      <div
+        className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] 
+      rounded-[2rem] bg-dark dark:bg-light 
+      xs:-right-2 xs: xs:h-[102%] xs:w-full "
+      />
       <Link
         href={link}
         target="_blank"
-        className="w-1/2 cursor-pointer overflow-hidden rounded-lg dark:text-light "
+        className="w-1/2 lg:w-full cursor-pointer overflow-hidden rounded-lg dark:text-light "
       >
         <Image
           src={img}
@@ -27,8 +33,8 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
           sizes="(max-width: 768px) 100vw,(max-width: 1200px) 50vw, 33vw"
         />
       </Link>
-      <div className="w-1/2 flex flex-col items-start justify-center pl-6 dark:text-light ">
-        <span className="text-primary font-medium text-xl dark:text-primaryDark">
+      <div className="w-1/2 flex flex-col items-start justify-center pl-6 dark:text-light lg:w-full lg:pl-0 lg:pt-6">
+        <span className="text-primary font-medium text-xl dark:text-primaryDark xs:text-base ">
           {type}
         </span>
         <Link
@@ -36,9 +42,13 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
           target="_blank"
           className="hover:underline underline-offset-2"
         >
-          <h2 className="w-full text-4xl my-2 text-left font-bold ">{title}</h2>
+          <h2 className="w-full text-4xl my-2 text-left font-bold sm:text-sm">
+            {title}
+          </h2>
         </Link>
-        <p className="my-2 text-dark font-medium dark:text-light">{summary}</p>
+        <p className="my-2 text-dark font-medium dark:text-light sm:text-sm">
+          {summary}
+        </p>
         <div className="mt-2 flex items-center">
           <Link href={github} target="_blank" className="w-10">
             <GithubIcon />
@@ -47,7 +57,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
             href={link}
             target="_blank"
             className="flex items-center bg-dark text-light text-lg font-semibold p-1 ml-4 px-6 rounded-lg
-                      border-2 border-solid border-transparent hover:border-dark"
+                      border-2 border-solid border-transparent hover:border-dark sm:px-4 sm:text-base"
           >
             Visit Project
           </Link>
@@ -61,9 +71,13 @@ const Project = ({ type, title, img, link, github }) => {
   return (
     <article
       className="w-full flex flex-col items-center justify-between
-    rounded-3xl border border-solid  border-dark dark:border-light bg-light dark:bg-dark shadow-2xl p-4 relative "
+    rounded-3xl border border-solid  border-dark dark:border-light bg-light 
+    dark:bg-dark shadow-2xl p-4 relative xs:p-4"
     >
-      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark dark:bg-light" />
+      <div
+        className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] 
+      bg-dark dark:bg-light xs:-right-2 xs: xs:h-[102%] xs:w-full "
+      />
       <Link
         href={link}
         target="_blank"
@@ -78,7 +92,10 @@ const Project = ({ type, title, img, link, github }) => {
         />
       </Link>
       <div className="w-full flex flex-col items-start justify-center mt-4 dark:text-light">
-        <span className="text-primary dark:text-primaryDark font-medium text-xl">
+        <span
+          className="text-primary dark:text-primaryDark font-medium text-xl
+        lg:text-lg md:text-base"
+        >
           {type}
         </span>
         <Link
@@ -86,17 +103,20 @@ const Project = ({ type, title, img, link, github }) => {
           target="_blank"
           className="hover:underline underline-offset-2"
         >
-          <h2 className="w-full text-3xl my-2 text-left font-bold ">{title}</h2>
+          <h2 className="w-full text-3xl my-2 text-left font-bold lg:text-2xl ">
+            {title}
+          </h2>
         </Link>
         <div className=" w-full mt-2 flex items-center justify-between">
           <Link
             href={link}
             target="_blank"
-            className="text-dark text-lg font-semibold underline underline-offset-2 dark:text-light"
+            className="text-dark text-lg font-semibold underline underline-offset-2 dark:text-light
+            md:text-base"
           >
             Visit
           </Link>
-          <Link href={github} target="_blank" className="w-8">
+          <Link href={github} target="_blank" className="w-8 md:w-6">
             <GithubIcon />
           </Link>
         </div>
@@ -116,9 +136,9 @@ export default function Projects() {
         <Layout className="pt-16">
           <AnimatedText
             text={'Imagination Trumps Knowledge!'}
-            className="mb-16"
+            className="mb-16 sm:mb-8 xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-5xl xs:text-3xl"
           />
-          <div className="grid grid-cols-12 gap-24 gap-y-32">
+          <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0 ">
             <div className="col-span-12 flex flex-col items-center justify-between">
               <FeaturedProject
                 type={'Featured Project'}
@@ -131,7 +151,7 @@ export default function Projects() {
                 github="/"
               />
             </div>
-            <div className="col-span-6 flex">
+            <div className="col-span-6 sm:col-span-12 flex">
               <Project
                 type={'Featured Project'}
                 title="Crypto Screener Application"
@@ -140,7 +160,7 @@ export default function Projects() {
                 github="/"
               />
             </div>
-            <div className="col-span-6 flex">
+            <div className="col-span-6 sm:col-span-12 flex">
               <Project
                 type={'Featured Project'}
                 title="Crypto Screener Application"
@@ -161,7 +181,7 @@ export default function Projects() {
                 github="/"
               />
             </div>
-            <div className="col-span-6 flex">
+            <div className="col-span-6 sm:col-span-12 flex">
               <Project
                 type={'Featured Project'}
                 title="Crypto Screener Application"
@@ -170,7 +190,7 @@ export default function Projects() {
                 github="/"
               />
             </div>
-            <div className="col-span-6 flex">
+            <div className="col-span-6 sm:col-span-12 flex">
               <Project
                 type={'Featured Project'}
                 title="Crypto Screener Application"

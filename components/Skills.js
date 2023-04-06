@@ -23,7 +23,13 @@ export default function Skills() {
       <h2 className="font-bold text-8xl mt-40 mb-11  text-center md:text-6xl md:mt-20 ">
         Skills
       </h2>
-      <div className="flex items-center justify-center rounded-full w-full h-screen bg-circularLigth dark:bg-circularDark lg:h-[80vh]  sm:h-[60vh] xs:h-[40vh]">
+      <div
+        className="flex items-center justify-center rounded-full w-full h-screen 
+      bg-circularLigth dark:bg-circularDark lg:h-[80vh]  sm:h-[60vh] xs:h-[40vh]
+      lg:bg-circularLigthLg lg:dark:bg-circularDarkLg
+      md:bg-circularLigthMd md:dark:bg-circularDarkMd
+      sm:bg-circularLigthSm sm:dark:bg-circularDarkSm "
+      >
         <motion.div
           className="flex place-items-center justify-center rounded-full font-semibold 
           bg-dark text-light p-8 shadow-dark cursor-pointer dark:bg-light dark:text-dark lg:p-6 md:p-4 xs:p-2 xs:text-sm"
